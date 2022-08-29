@@ -12,7 +12,9 @@ Welcome to CS 110. I look forward to working with you this semester. This is you
 
 Preferred Name:
 Brianna Jules
+
 Discord username:
 briannajules
+
 REPL url:
 https://replit.com/@BriannaJules1
