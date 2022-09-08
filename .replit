@@ -1,6 +1,6 @@
 run = ["python3", "main.py"]
 language = "python3"
-entrypoint = "main.py"
+#entrypoint = "main.py"
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
 
 audio = true
@@ -15,8 +15,8 @@ requiredFiles = [".replit", "replit.nix", "venv", ".config"]
 pattern = "**/*.py"
 syntax = "python"
 
-  [languages.python3.languageServer]
-  start = ["pyls"]
+[languages.python3.languageServer]
+start = ["pyls"]
 
 [interpreter]
 command = [
@@ -36,43 +36,43 @@ REPLIT_POETRY_PYPI_REPOSITORY="https://package-proxy.replit.com/pypi/"
 [debugger]
 support = true
 
-  [debugger.interactive]
-  transport = "localhost:0"
-  startCommand = ["dap-python", "main.py"]
+[debugger.interactive]
+transport = "localhost:0"
+startCommand = ["dap-python", "main.py"]
 
-    [debugger.interactive.integratedAdapter]
-    dapTcpAddress = "localhost:0"
+[debugger.interactive.integratedAdapter]
+dapTcpAddress = "localhost:0"
   
-    [debugger.interactive.initializeMessage]
-    command = "initialize"
-    type = "request"
+[debugger.interactive.initializeMessage]
+command = "initialize"
+type = "request"
 
-      [debugger.interactive.initializeMessage.arguments]
-      adapterID = "debugpy"
-      clientID = "replit"
-      clientName = "replit.com"
-      columnsStartAt1 = true
-      linesStartAt1 = true
-      locale = "en-us"
-      pathFormat = "path"
-      supportsInvalidatedEvent = true
-      supportsProgressReporting = true
-      supportsRunInTerminalRequest = true
-      supportsVariablePaging = true
-      supportsVariableType = true
-  
-    [debugger.interactive.launchMessage]
-    command = "attach"
-    type = "request"
+[debugger.interactive.initializeMessage.arguments]
+adapterID = "debugpy"
+clientID = "replit"
+clientName = "replit.com"
+columnsStartAt1 = true
+linesStartAt1 = true
+locale = "en-us"
+pathFormat = "path"
+supportsInvalidatedEvent = true
+supportsProgressReporting = true
+supportsRunInTerminalRequest = true
+supportsVariablePaging = true
+supportsVariableType = true
 
-      [debugger.interactive.launchMessage.arguments]
-      logging = {}
+[debugger.interactive.launchMessage]
+command = "attach"
+type = "request"
+
+[debugger.interactive.launchMessage.arguments]
+logging = {}
 
 [packager]
 language = "python3"
 ignoredPackages = ["unit_tests"]
 
-  [packager.features]
-  enabledForHosting = false
-  packageSearch = true
-  guessImports = true
+[packager.features]
+enabledForHosting = false
+packageSearch = true
+guessImports = true
