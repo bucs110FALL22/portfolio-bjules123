@@ -1,6 +1,7 @@
 { pkgs }: {
 	deps = [
-		pkgs.csound
+		pkgs.import pygame
+  pkgs.install pygame
   pkgs.python38Full
 	];
   env = {
