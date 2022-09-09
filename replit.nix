@@ -1,8 +1,6 @@
 { pkgs }: {
 	deps = [
-		pkgs.import pygame
-  pkgs.install pygame
-  pkgs.python38Full
+		pkgs.python38Full
 	];
   env = {
     LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath ([
