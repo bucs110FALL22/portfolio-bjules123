@@ -18,7 +18,16 @@ michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 
 ## 5. Your PART A code goes here
+michelangelo.forward(random.randrange(1,100))
+leonardo.forward(random.randrange(1,100))
+michelangelo.goto(-100,20)
+leonardo.goto(-100,-20)
 
+for i in range(10):
+  michelangelo.forward(random.randrange(1,10))
+  leonardo.forward(random.randrange(1,10))
+  michelangelo.goto(-100,20)
+  leonardo.goto(-100,-20)
 
 # PART B - complete part B here
 
