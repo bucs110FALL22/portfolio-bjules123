@@ -9,6 +9,7 @@ my_dictionary = {
   "Fashion Week" : "best week ever"
 }
 
-for old, new in my_dictionary.items():
-  article = article.replace(old, new)
+for key, value in my_dictionary.items():
+  article = article.replace(key, value)
+
 print(article)
