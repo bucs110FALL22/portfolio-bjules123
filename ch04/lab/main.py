@@ -13,21 +13,37 @@ pygame.draw.line(screen, "black", (261, 0), (261, 332),1)
 pygame.display.flip()
 
 #Part B
-x1 = random.randrange(0,522)
-y1 = random.randrange(0,322)
+#x1 = random.randrange(0,522)
+#y1 = random.randrange(0,322)
 
 #print(x,y)
-pygame.draw.circle(screen, "purple",(x1,y1), 5)
-pygame.display.flip()
-distance_from_center = math.hypot(x1-261, y1-161) #the distance formula
+ #the distance formula
 #is_in_circle = distance_from_center <=  (height * width)/2 #where length and width are the screen size
+count = 0
+while (count <= 10):  
+ count = count + 1
+ x1 = random.randrange(0,522)
+ y1 = random.randrange(0,322)
+ distance_from_center = math.hypot(x1-261, y1-161)
+ pygame.draw.circle(screen, "blue",(x1,y1), 5)
+ pygame.display.flip()
+ if distance_from_center <=  150:
+  pygame.draw.circle(screen, "green",(x1,y1), 5)
+  pygame.display.flip()
+ else:
+  pygame.draw.circle(screen, "red",(x1,y1), 5)
+  pygame.display.flip()
+pygame.time.wait(1500)
 
-if distance_from_center <=  150:
- pygame.draw.circle(screen, "green",(x1,y1), 5)
- pygame.display.flip()
-else:
- pygame.draw.circle(screen, "red",(x1,y1), 5)
- pygame.display.flip()
+screen = pygame.display.set_mode()
+(width,height) = pygame.display.get_window_size()
+screen.fill("blue")
+
+
+#Part C
+screen.fill("red")
+pygame.draw.polygon(screen,"purple",[(100,100),(200,200),(300,300),(60,160)])
+pygame.display.flip()
 
 pygame.time.wait(2000)
 
