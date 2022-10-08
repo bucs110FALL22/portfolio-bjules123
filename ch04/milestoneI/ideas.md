@@ -18,12 +18,10 @@ For each one below you should have a basic description of a program idea, a coup
 
 ## Project Idea 1
 
-< add your idea here >
+Health and Wellness. A website that has information on health, tips, and videos. Users can create an account to track their health data. They can also chat will other users with them about tips and create a community.
 
 ## Project Idea 2
-
-< add your idea here >
+Clothing. A simulator that creates outfits for the day/week based off what you have in your closet. It can randomly choose or the user can input a color or style and sort their clothes. 
 
 ## Project Idea 3
-
-< add your idea here >
+Shopping. Users can use the website to shop for certain clothing. They can choose which stores they want to search through and pick from there. For example, they might need a yellow dress from H&M, Forever 21, and Hollister. It would merge all the yellow dresses from those websites. Saves time and tabs.
