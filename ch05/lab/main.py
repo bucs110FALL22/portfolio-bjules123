@@ -1,4 +1,3 @@
-#Part A and B
 import pygame 
 pygame.init()
 display = pygame.display.set_mode()
@@ -24,13 +23,13 @@ for start in range(2,upper_limit+1,1):
  if count>max_so_far:
     max_so_far = count
  iters[start*5]=count*5
- y.append(count)
- x.append(start)
+ #y.append(count)
+ #x.append(start)
 max_val = max_so_far
 print(iters)
 #print(x)
 #print(y)
-print((x[0],y[0]))
+#print((x[0],y[0]))
 print(max_val)
 coords = list(iters.items())
 
@@ -39,7 +38,6 @@ if len(iters)>1:
   #pygame.draw.lines(display, "black",(x[0], y[0]), (x[1], y[1]))
  pygame.display.flip()
  pygame.time.wait(2000)
-
 new_display = pygame.transform.flip(display, False, True)
 tempString = "The largest number is " + str(max_val)
 msg = font.render(tempString, True, "black")
