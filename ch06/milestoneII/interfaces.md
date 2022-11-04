@@ -22,13 +22,34 @@ Given what you have learned about classes on Chapter 6, describe the ***interfac
 Come up with interfaces fot 3 possible classes you think you may need. Again, brainstorm a little. Nothing is *wrong*.
 
 ## Class Interface 1
-
-< add your interface >
-
+*class Account
+ attributes:
+  * x, y (save username and password)
+  * color (background color)
+  * string (Login here)
+ methods
+  *login button
+  *input textboxes
+  *help link
 ## Class Interface 2
-
-< add your interface >
-
+*class Resources
+ attributes (sends user to different locations): 
+  *weight loss 
+  *depression
+  *anxiety
+ methods:
+  *links to resources
+  *videos
+  *tips
 ## Class Interface 3
-
+*class Community
+  attributes:
+  *chatroom1,2,3... (general)
+  *teenroom, 25+room, etc (separates based on age) 
+  *rooms for different issues
+  methods:
+  *banned words (curse words)
+  *username display
+  *like/dislike buttons
+  
 < add your interface >
